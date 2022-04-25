@@ -6,7 +6,7 @@
 
 
         <default>
-<log_queries>1</log_queries>
+          <log_queries>1</log_queries>
             <!-- Maximum memory usage for processing single query, in bytes. -->
             <max_memory_usage>10000000000</max_memory_usage>
 
@@ -64,7 +64,7 @@
                  Execute: PASSWORD=$(base64 < /dev/urandom | head -c8); echo "$PASSWORD"; echo -n "$PASSWORD" | sha1sum | tr -d '-' | xxd -r -p | sha1sum | tr -d '-'
                  In first line will be password and in second - corresponding double SHA1.
             -->
- <password_sha256_hex>7fdf96bb2f37693df31623754ec5fea6e8bd86783f89be5caf2be1dbeef1663e</password_sha256_hex>
+         <password_sha256_hex>7fdf96bb2f37693df31623754ec5fea6e8bd86783f89be5caf2be1dbeef1663e</password_sha256_hex>
             <!-- List of networks with open access.
 
                  To open access from everywhere, specify:
@@ -98,13 +98,13 @@
             <!-- User can create other users and grant rights to them. -->
             <!-- <access_management>1</access_management> -->
         </default>
-<root>
+        <root>
             <password_sha256_hex>7fdf96bb2f37693df31623754ec5fea6e8bd86783f89be5caf2be1dbeef1663e</password_sha256_hex>
             <networks>
                 <ip>::/0</ip>
             </networks>
             <quota>default</quota>
-</root>
+       </root>
 
     </users>
 
